@@ -14,7 +14,7 @@ const genreType genreInt[] = {NONFICTION, FICTION, SCIFI, FANTASY, CHILD, BIO, A
 class book
 {
 public:
-    book(string, string, string, string, string, genreType[], int);
+    book(string author, string title, string subject, string publisher, string isbn, genreType genres[], int numGenres);
     ~book();
 
 private:   
@@ -26,7 +26,27 @@ private:
     genreType * genres;
 
 };
+//The syntax used to invok the getter and setter.They donot look like even a function .Getter and setter are crucial as they hide internal implmentation details.
 
+//constructor(author)
+{
+    this->author=author;
+}
+//This is the getter method
+get Writter()
+{
+    return this->author;
+}
+//This is setter method
+set Writter(updatedAuthor)
+{
+    this ->author=updatedAuthor;
+}
+}
+const novel=new Book('anonymous');
+console.log(novel.writter);
+novel.writer='newAuthor';
+console.log(novel.writter);
 
 
 
