@@ -16,5 +16,18 @@ int main()
     mybook.genres = new genreType[1];
     mybook.genres[0] = CHILD;*/
     
+    {
+        // print out the information
+        cout<<"Author\t";
+        cout<<"Title\t";
+        cout<<"Subject\t";
+        cout<<"Publisher\t";
+        cout<<"Isbn\t";
+        cout<<"Price1\t";
+        cout<<"Price2\t";
+        cout<<"Price3\t";
+        cout<<"Type\t";
+        cout<<endl;
+    }
     return 0;
 }
